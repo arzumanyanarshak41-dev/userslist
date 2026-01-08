@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rebeccapurple;
+}
+.userList{
+  width: 800px;
+  margin: 20px auto;
+  border-radius:8px;
+  background-color: white;
+}
+.userListHead{
+  border-radius: 8px 8px 0px 0px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: rgba(2, 117, 225, 0.793);
+  color: white;
+  padding: 20px;
+  align-items: center;
+  h1{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    span{
+      font-size: 25px;
+    }
+  }
+  button{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 8px;
+    border: none;
+  }
+}
+.userListBody{
+  display: flex;
+  width: 90%;
+  margin: 5px auto;
+  border-top: 1px solid gray;
+  padding: 10px;
+  flex-direction: column;
+  .general{
+    color: black;
+  }
+  ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    color: gray;
+    img{
+      width: 30px;
+      border-radius: 50%;
+      margin: 3px;
+    }
+    li{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100px;
+    }
+    .usname{
+      width: 200px;
+    }
+    .id{
+      width: 20px;
+    }
+  }
+}
+.actions{
+  display: flex;
+  gap: 10px;
+  .bi-trash-fill{
+    color: red;
+  }
+}
+.person{
+  padding: 10px;
+  margin: 5px;
+  border-top: 1px solid rgb(77, 76, 76);
+}
+.userListPages{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px 0px;
+  p{
+    color: gray;
+  }
+  .pagesbox{
+    display: flex;
+    gap: 10px;
+    button{
+      padding: 5px;
+      border: 1px solid rgba(0, 0, 255, 0.318);
+      background-color: transparent;
+      border-radius: 4px;
+      transition: all 0.2s;
+    }
+    button:hover{
+      transform: scale(1.1);
+    }
+    .bn{
+      border: none;
+    }
+  }
+}
+.bi-pencil-square{
+  cursor: pointer;
+}
+.bi-trash-fill{
+  cursor: pointer;
+}
+button{
+  cursor: pointer;
+}
+.editForm{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+  input{
+    color: rgb(81, 81, 81);
+    border: none;
+  }
+  button{
+    background-color: rgb(89, 157, 245);
+    color: white;
+    padding: 2px 4px;
+    border: none;
+    border-radius: 4px;
+  }
+}
