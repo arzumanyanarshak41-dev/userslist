@@ -18,7 +18,7 @@ export const Addnewuser = ({ setUsers, users, setAdding, adding }) => {
         e.preventDefault();
         if (name.trim()) {
             setUsers([...users, {
-                id: users.length + 1,
+                id: (users.at(-1).id)+1,
                 fullname: name,
                 role: "viewer",
                 dateCreated: new Date().toISOString().slice(0, 10),
