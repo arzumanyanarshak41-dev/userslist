@@ -1,18 +1,21 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   background-color: rebeccapurple;
 }
-.userList{
+
+.userList {
   width: 800px;
   margin: 20px auto;
-  border-radius:8px;
+  border-radius: 8px;
   background-color: white;
 }
-.userListHead{
+
+.userListHead {
   border-radius: 8px 8px 0px 0px;
   display: flex;
   width: 100%;
@@ -21,16 +24,19 @@ body{
   color: white;
   padding: 20px;
   align-items: center;
-  h1{
+
+  h1 {
     font-size: 20px;
     display: flex;
     align-items: center;
     gap: 5px;
-    span{
+
+    span {
       font-size: 25px;
     }
   }
-  button{
+
+  button {
     padding: 5px;
     display: flex;
     align-items: center;
@@ -39,17 +45,20 @@ body{
     border: none;
   }
 }
-.userListBody{
+
+.userListBody {
   display: flex;
   width: 90%;
   margin: 5px auto;
   border-top: 1px solid gray;
   padding: 10px;
   flex-direction: column;
-  .general{
+
+  .general {
     color: black;
   }
-  ul{
+
+  ul {
     width: 100%;
     list-style: none;
     display: flex;
@@ -57,87 +66,163 @@ body{
     justify-content: flex-start;
     gap: 50px;
     color: gray;
-    img{
+
+    img {
       width: 30px;
       border-radius: 50%;
       margin: 3px;
     }
-    li{
+
+    li {
       display: flex;
       justify-content: flex-start;
       align-items: center;
       width: 100px;
     }
-    .usname{
+
+    .usname {
       width: 200px;
     }
-    .id{
+
+    .id {
       width: 20px;
     }
   }
 }
-.actions{
+
+.actions {
   display: flex;
   gap: 10px;
-  .bi-trash-fill{
+
+  .bi-trash-fill {
     color: red;
   }
 }
-.person{
+
+.person {
   padding: 10px;
   margin: 5px;
   border-top: 1px solid rgb(77, 76, 76);
 }
-.userListPages{
+
+.userListPages {
   display: flex;
   width: 100%;
   justify-content: space-between;
   padding: 20px 0px;
-  p{
+
+  p {
     color: gray;
   }
-  .pagesbox{
+
+  .pagesbox {
     display: flex;
     gap: 10px;
-    button{
+
+    button {
       padding: 5px;
       border: 1px solid rgba(0, 0, 255, 0.318);
       background-color: transparent;
       border-radius: 4px;
       transition: all 0.2s;
     }
-    button:hover{
+
+    button:hover {
       transform: scale(1.1);
     }
-    .bn{
+
+    .bn {
       border: none;
     }
   }
 }
-.bi-pencil-square{
+
+.bi-pencil-square {
   cursor: pointer;
 }
-.bi-trash-fill{
+
+.bi-trash-fill {
   cursor: pointer;
 }
-button{
+
+button {
   cursor: pointer;
 }
-.editForm{
+
+.editForm {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 5px;
-  input{
+
+  input {
     color: rgb(81, 81, 81);
     border: none;
   }
-  button{
+
+  button {
     background-color: rgb(89, 157, 245);
     color: white;
     padding: 2px 4px;
     border: none;
     border-radius: 4px;
   }
+}
+
+.addbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+  margin-top: 8px;
+  border-radius: 10px;
+  background-color: rgba(2, 117, 225, 0.793);
+  color: white;
+  width: 300px;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+.addnewuser {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  .addforminput {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    background-color: rgb(32, 163, 200);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 5px 10px;
+  }
+
+  input {
+    padding: 5px;
+    border: none;
+    border-radius: 8px;
+  }
+
+  img {
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+  }
+}
+
+.cancel {
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 4px;
 }
